@@ -1,0 +1,8 @@
+# As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra.
+numero_macas = int(input("Digite o número de maçãs compradas: "))
+if numero_macas < 12:
+    preco_por_maca = 1.30
+else:
+    preco_por_maca = 1.00
+custo_total = numero_macas * preco_por_maca
+print(f"O custo total da compra é: R$ {custo_total:.2f}")
